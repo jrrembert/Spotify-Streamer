@@ -1,18 +1,3 @@
-/*
- *  Author: J. Ryan Rembert
- *  Project: Spotify-Streamer
- *  Source: https://github.com/jrrembert/Spotify-Streamer
- *
- *  Copyright (C) 2015 J. Ryan Rembert. All rights reserved.
- *
- *  Redistribution of source code perfectly cool as long as the
- *  above copyright notice is provided and you don't sue me if
- *  something (somehow) explodes. Unless it explodes into a
- *  rainbow of mutant dinosaurs made out of cookie batter.
- *  Then I assume complete credit.
- *
- */
-
 apply plugin: 'com.android.application'
 
 android {
@@ -34,7 +19,27 @@ android {
     }
 }
 
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.0'
+
+    // Spotify Web API
+    // Note: Spotify Web API must be manually cloned and copied in /libs
+    // Steps:
+    // 1. Clone repo: git clone https://github.com/kaaes/spotify-web-api-android.git
+    // 2. Build: ./gradlew assemble
+    // 3. Copy build/outputs/aar/spotify-web-api-android-0.1.0.aar into your apps /libs directory.
+    compile(name:'spotify-web-api-android-0.1.0', ext:'aar')
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.squareup.okhttp:okhttp:2.2.0'
+
+    // Picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
 }
