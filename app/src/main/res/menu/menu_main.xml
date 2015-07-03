@@ -1,0 +1,21 @@
+<!--
+  ~  Author: J. Ryan Rembert
+  ~  Project: Spotify-Streamer
+  ~  Source: https://github.com/jrrembert/Spotify-Streamer
+  ~
+  ~  Copyright (C) 2015 J. Ryan Rembert. All rights reserved.
+  ~
+  ~  Redistribution of source code perfectly cool as long as the
+  ~  above copyright notice is provided and you don't sue me if
+  ~  something (somehow) explodes. Unless it explodes into a
+  ~  rainbow of mutant dinosaurs made out of cookie batter.
+  ~  Then I assume complete credit.
+  ~
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

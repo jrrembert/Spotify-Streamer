@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Author: J. Ryan Rembert
+  ~  Project: Spotify-Streamer
+  ~  Source: https://github.com/jrrembert/Spotify-Streamer
+  ~
+  ~  Copyright (C) 2015 J. Ryan Rembert. All rights reserved.
+  ~
+  ~  Redistribution of source code perfectly cool as long as the
+  ~  above copyright notice is provided and you don't sue me if
+  ~  something (somehow) explodes. Unless it explodes into a
+  ~  rainbow of mutant dinosaurs made out of cookie batter.
+  ~  Then I assume complete credit.
+  ~
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.github.jrrembert.spotify_streamer" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

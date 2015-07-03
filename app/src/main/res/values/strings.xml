@@ -1,0 +1,21 @@
+<!--
+  ~  Author: J. Ryan Rembert
+  ~  Project: Spotify-Streamer
+  ~  Source: https://github.com/jrrembert/Spotify-Streamer
+  ~
+  ~  Copyright (C) 2015 J. Ryan Rembert. All rights reserved.
+  ~
+  ~  Redistribution of source code perfectly cool as long as the
+  ~  above copyright notice is provided and you don't sue me if
+  ~  something (somehow) explodes. Unless it explodes into a
+  ~  rainbow of mutant dinosaurs made out of cookie batter.
+  ~  Then I assume complete credit.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">Spotify-Streamer</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
